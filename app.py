@@ -8,12 +8,48 @@ from turtle import Turtle
 
 the_best_zoo = Zoo('Best Zoo Ever', 'Loveland', '9 to 5')
 
-#Create employees
-employee_1 = ('Alexa Whitney', 35, 13)
-employee_2 = ('Jane Harrison', 38, 2)
+#Zoo methods:
+the_best_zoo.show_hours()
 
+#Create employees
+employee_1 = Employees('Best Zoo Ever','Alexa Whitney', 35, 13)
+employee_2 = Employees('Best Zoo Ever','Jane Harrison', 38, 2)
+
+#Run employee methods
+
+#Add employees to list of Zoo Employees
 the_best_zoo.add_employee(employee_1)
 the_best_zoo.add_employee(employee_2)
 
-lions = Animal('Lion', 'F')
-simba = Lion('Simba','F', 6)
+#Confirm employees are in list
+for item in the_best_zoo.employees:
+    print(item.name)
+
+#Employee methods:
+employee_1.introduce()
+employee_2.introduce()
+employee_2.update_id()
+
+#Create lions
+nala = Lion('Nala', 6, 'F')
+simba = Lion('Simba',5,'M')
+
+#Run and test lion methods
+nala.add_to_endangered()
+print(nala.is_endangered)
+simba.eat()
+nala.eat()
+
+# Create turtles
+squirtle = Turtle('Squirtle', 55, 'F')
+crush = Turtle('Crush', 2, 'M' )
+
+# Run methods on turtles
+
+#Run and test turtle and other methods
+crush.add_to_endangered()
+crush.pregnant()
+squirtle.swim()
+squirtle.pregnant()
+squirtle.eat()
+

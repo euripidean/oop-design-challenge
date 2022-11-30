@@ -1,7 +1,5 @@
 class Animal:
-    def __init__(self, species, gender, is_endangered = False, offspring_num = 0):
-        self.species = species
-        self.gender = gender
+    def __init__(self, is_endangered = False, offspring_num = 0):
         self.is_endangered = is_endangered
         self.offspring_num = offspring_num
 
@@ -11,6 +9,8 @@ class Animal:
 
     def pregnant(self):
         if self.gender == 'F':
-            offspring_num += 1
+            self.offspring_num += 1
             self.is_endangered = False
             print(f"Great news! The {self.species} is pregnant.\n Conservation efforts successful.")
+        else:
+            print(f"Steady on! This isn't possible...yet.")
