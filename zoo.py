@@ -5,7 +5,6 @@ class Zoo:
         self.opening_hours = opening_hours
         #Employees is a private attribute so no one can access employee data.
         self.employees = employees
-        self.enclosures = []
 
     def show_hours(self):
         print(f"The opening hours for {self.name} are: {self.opening_hours}.")
