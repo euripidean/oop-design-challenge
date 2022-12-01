@@ -1,5 +1,6 @@
 class Zoo:
     def __init__(self, name, location, opening_hours, employees = []):
+        """Initialise Zoo"""
         self.name = name
         self.location = location
         self.opening_hours = opening_hours
