@@ -17,7 +17,7 @@ Inheriting from Animal we have Lion and Turtle, two examples of how broad the an
 Lion methods override the default animal methods: assuming lions always have two cubs, we change the offspring_num update for Lions who have the pregnant() method called. Similarly, Lions eat a very different diet from Turtles, so this is reflected in the eat() method.
 
 ## UML Diagram
-
+![alt text](https://github.com/euripidean/oop-design-challenge/blob/main/uml.jpg?raw=true)
 
 
 
