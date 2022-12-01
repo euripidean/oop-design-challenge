@@ -16,10 +16,3 @@ class Lion(Animal):
         super().pregnant()
         self.offspring_num += 2
         print(f"Congratulations! {self.name} is expecting 2 cubs!")
-
-
-nala = Lion('Nala', 6, 'F')
-# print(help(nala))
-print(nala.age)
-nala.add_to_endangered()
-print(nala.is_endangered)
