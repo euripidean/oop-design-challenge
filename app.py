@@ -1,5 +1,4 @@
 from zoo import Zoo
-from animal import Animal
 from employees import Employees
 from lion import Lion
 from turtle import Turtle
@@ -30,26 +29,25 @@ employee_1.introduce()
 employee_2.introduce()
 employee_2.update_id()
 
-#Create lions
-# nala = Lion('Nala', 6, 'F')
-# simba = Lion('Simba',5,'M')
+# Create lions
+nala = Lion('Nala', 6, 'F')
+simba = Lion('Simba',5,'M')
 
-# #Run and test lion methods
-# nala.add_to_endangered()
-# print(nala.is_endangered)
-# simba.eat()
-# nala.eat()
+#Run and test lion methods
+nala.add_to_endangered()
+#check this has been updated
+print(nala.is_endangered)
+simba.eat()
+nala.eat()
 
-# # Create turtles
-# squirtle = Turtle('Squirtle', 55, 'F')
-# crush = Turtle('Crush', 2, 'M' )
+# Create turtles
+squirtle = Turtle('Squirtle', 55, 'F')
+crush = Turtle('Crush', 2, 'M' )
 
-# # Run methods on turtles
-
-# #Run and test turtle and other methods
-# crush.add_to_endangered()
-# crush.pregnant()
-# squirtle.swim()
-# squirtle.pregnant()
-# squirtle.eat()
+#Run and test turtle and other methods
+crush.add_to_endangered()
+crush.pregnant()
+squirtle.swim()
+squirtle.pregnant()
+squirtle.eat()
 

@@ -3,13 +3,14 @@ class Animal:
         """Animal class for zoo"""
         self.is_endangered = is_endangered
         self.offspring_num = offspring_num
-        self.inventory = []
 
     def add_to_endangered(self):
+        """Update endangered status of animal"""
         self.is_endangered = True
         print(f"Oh noes! The {self.species} is now endangered.")
 
     def pregnant(self):
+        """Update animal offspring number and endangered status if animal is pregnant"""
         if self.gender == 'F':
             self.offspring_num += 1
             self.is_endangered = False
@@ -18,8 +19,5 @@ class Animal:
             print(f"Steady on! This isn't possible...yet.")
 
     def eat(self):
+        """Default animal eating method"""
         print("The animal eats.")
-
-    def add_to_inventory(self, animal):
-        self.inventory.append(animal)
-        print(f'{animal.name} added to Zoo registry')

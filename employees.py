@@ -1,6 +1,7 @@
 from random import randint
 
 def random_employee_id(n):
+    """Generate unique employee id"""
     range_start = 10**(n-1)
     range_end = (10**n)-1
     return randint(range_start, range_end)
@@ -16,7 +17,9 @@ class Employees:
         self.employee_id = random_employee_id(8)
 
     def introduce(self):
+        """Employee introduces themself to a client"""
         print(f"Hi! My name is {self.name} and I have worked at {self.employer.name} for {self.years_of_service} years. How can I help you?")
 
     def update_id(self):
+        """Returning employee has new id number generated."""
         print(f"I quit and came back. My new employee id is {self.employee_id}.")
