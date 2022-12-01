@@ -7,6 +7,7 @@ def random_employee_id(n):
 
 class Employees:
     def __init__(self, employer, name, age, years_of_service = 0):
+        """Initialise employee"""
         self.employer = employer
         self.name = name
         self.age = age
@@ -15,10 +16,7 @@ class Employees:
         self.employee_id = random_employee_id(8)
 
     def introduce(self):
-        print(f"Hi! My name is {self.name} and I have worked at {self.employer} for {self.years_of_service} years. How can I help you?")
+        print(f"Hi! My name is {self.name} and I have worked at {self.employer.name} for {self.years_of_service} years. How can I help you?")
 
     def update_id(self):
         print(f"I quit and came back. My new employee id is {self.employee_id}.")
-
-alexa = Employees('Cool Zoo', 'Alexa', 35, 12)
-alexa.introduce()

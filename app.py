@@ -12,8 +12,8 @@ the_best_zoo = Zoo('Best Zoo Ever', 'Loveland', '9 to 5')
 the_best_zoo.show_hours()
 
 #Create employees
-employee_1 = Employees('Best Zoo Ever','Alexa Whitney', 35, 13)
-employee_2 = Employees('Best Zoo Ever','Jane Harrison', 38, 2)
+employee_1 = Employees(the_best_zoo,'Alexa Whitney', 35, 13)
+employee_2 = Employees(the_best_zoo,'Jane Harrison', 38, 2)
 
 #Run employee methods
 
@@ -31,25 +31,25 @@ employee_2.introduce()
 employee_2.update_id()
 
 #Create lions
-nala = Lion('Nala', 6, 'F')
-simba = Lion('Simba',5,'M')
+# nala = Lion('Nala', 6, 'F')
+# simba = Lion('Simba',5,'M')
 
-#Run and test lion methods
-nala.add_to_endangered()
-print(nala.is_endangered)
-simba.eat()
-nala.eat()
+# #Run and test lion methods
+# nala.add_to_endangered()
+# print(nala.is_endangered)
+# simba.eat()
+# nala.eat()
 
-# Create turtles
-squirtle = Turtle('Squirtle', 55, 'F')
-crush = Turtle('Crush', 2, 'M' )
+# # Create turtles
+# squirtle = Turtle('Squirtle', 55, 'F')
+# crush = Turtle('Crush', 2, 'M' )
 
-# Run methods on turtles
+# # Run methods on turtles
 
-#Run and test turtle and other methods
-crush.add_to_endangered()
-crush.pregnant()
-squirtle.swim()
-squirtle.pregnant()
-squirtle.eat()
+# #Run and test turtle and other methods
+# crush.add_to_endangered()
+# crush.pregnant()
+# squirtle.swim()
+# squirtle.pregnant()
+# squirtle.eat()
 
